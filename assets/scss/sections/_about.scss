@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.about {
+  @include flex-center;
+  min-height: 100vh;
+  padding: $space-xl $space-md;
+  background: $bg-secondary;
+}

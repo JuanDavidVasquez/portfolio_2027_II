@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+$breakpoints: (
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl,
+);
+
+// Mobile first: @include respond(md) { ... }
+@mixin respond($bp) {
+  @media (min-width: map.get($breakpoints, $bp)) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cover-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

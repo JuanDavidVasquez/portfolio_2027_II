@@ -1,0 +1,130 @@
+@use '../abstracts' as *;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  height: 100svh;
+  background: $bg-primary url('../../img/hero/hero.png');
+  @include cover-bg;
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 45%;
+    padding-left: 8%;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-md;
+
+    h1 {
+      color: $text-primary;
+      white-space: nowrap;
+    }
+    p {
+      color: $text-secondary;
+      font-size: clamp(14px, 1.6vw, 24px);
+      line-height: clamp(18px, 2.2vw, 32px);
+    }
+  }
+
+  &__scene {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  // Hidden until GSAP animates them in, to avoid a flash before the JS loads.
+  &__item,
+  &__tech,
+  &__heading {
+    visibility: hidden;
+  }
+
+  &__item {
+    position: absolute;
+    height: auto;
+
+    &--monitor { left: 80%; top: 26%; width: 22%; z-index: 1; }
+    &--matera  { left: 57%; top: 38%; width: 16%; z-index: 2; }
+    &--laptop  { left: 66%; top: 45%; width: 30%; z-index: 3; }
+    &--teclado { left: 91%; top: 66%; width: 14%; z-index: 3; }
+    &--pocillo { left: 50%; top: 57%; width: 8%;  z-index: 4; }
+    &--libreta { left: 52%; top: 73%; width: 19%; z-index: 4; }
+    &--lapiz   { left: 58%; top: 73%; width: 9%;  z-index: 5; }
+  }
+
+  &__stack {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-md $space-lg;
+    width: 26%;
+  }
+
+  &__tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-xs;
+    color: $text-secondary;
+    font-size: clamp(0.6rem, 0.8vw, $fs-sm);
+
+    svg {
+      width: clamp(18px, 2.2vw, 32px);
+      height: auto;
+      fill: currentColor;
+    }
+  }
+
+  &__aws {
+    font-family: $font-body;
+    font-weight: $fw-bold;
+    font-size: clamp(14px, 1.6vw, 24px);
+    line-height: clamp(18px, 2.2vw, 32px);
+  }
+
+  // In portrait the scene keeps its landscape composition: a 16:9 box wide enough that its
+  // right half (where every item lives, 50%–105%) fills the screen, anchored to the desk.
+  @media (orientation: portrait) {
+    &__content {
+      align-items: flex-start;
+      justify-content: center;
+      max-width: none;
+      padding: 18svh $space-md 0;
+    }
+
+    &__scene {
+      inset: auto auto 6svh -90vw;
+      width: 180vw;
+      aspect-ratio: 16 / 9;
+    }
+
+    // Percentages are of the 180vw scene: this centers a 90vw-wide grid above the monitor.
+    &__stack {
+      left: 52.5%;
+      top: -30%;
+      width: 50%;
+    }
+
+    &__tech {
+      font-size: 0.6rem;
+
+      svg {
+        width: 20px;
+      }
+    }
+  }
+}

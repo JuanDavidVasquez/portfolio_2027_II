@@ -1,0 +1,95 @@
+// ==========================================================
+// Colores de fondo
+// ==========================================================
+$bg-primary: #0f0f12;
+$bg-secondary: #1a1a21;
+$bg-tertiary: #f5f3ef;
+
+// ==========================================================
+// Colores de texto
+// ==========================================================
+$text-primary: #ffffff;
+$text-secondary: #a1a1aa;
+$text-accent: #ff6b35;
+
+// ==========================================================
+// Tipografías
+// ==========================================================
+$font-heading: 'Playfair Display', Georgia, serif;
+$font-body: 'Inter', system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: 1rem;
+$fs-lg: 1.25rem;
+$fs-xl: 1.75rem;
+$fs-2xl: 2.5rem;
+$fs-3xl: clamp(2.5rem, 6vw, 5rem);
+
+$lh-tight: 1.1;
+$lh-base: 1.5;
+$lh-loose: 1.8;
+
+// ==========================================================
+// Bordes
+// ==========================================================
+$border-color: rgba(255, 255, 255, 0.12);
+$border-width: 1px;
+$border: $border-width solid $border-color;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-full: 9999px;
+
+// ==========================================================
+// Degradados
+// ==========================================================
+$gradient-primary: linear-gradient(135deg, #ff6b35 0%, #f7c948 100%);
+$gradient-secondary: linear-gradient(135deg, #6a5af9 0%, #d66efd 100%);
+$gradient-dark: linear-gradient(180deg, $bg-secondary 0%, $bg-primary 100%);
+
+// ==========================================================
+// Sombras
+// ==========================================================
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+$shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.4);
+$shadow-glow: 0 0 24px rgba(255, 107, 53, 0.45);
+
+// ==========================================================
+// Espaciados
+// ==========================================================
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
+$space-2xl: 8rem;
+
+// ==========================================================
+// Transiciones
+// ==========================================================
+$ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+$duration-fast: 0.2s;
+$duration-base: 0.4s;
+$duration-slow: 0.8s;
+
+// ==========================================================
+// Breakpoints y capas
+// ==========================================================
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1440px;
+
+$z-base: 1;
+$z-header: 100;
+$z-overlay: 500;
+$z-modal: 1000;
