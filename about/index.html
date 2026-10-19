@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="./" data-route="about" data-i18n="nav.about">Sobre mí</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="about" data-i18n-title="about.meta.title" class="about-page">
+        <section class="about-page__intro">
+            <span class="eyebrow" data-i18n="about.intro.eyebrow">Sobre mí</span>
+            <h1 data-i18n="about.intro.title">Hola, soy Juan David Vásquez</h1>
+            <p class="about-page__role" data-i18n="about.intro.role">Senior Full Stack Software Engineer · Cloud &amp; AI Solutions</p>
+            <p class="about-page__lead" data-i18n="about.intro.text">Llevo más de 8 años diseñando y desplegando aplicaciones web escalables, desde la API hasta el frontend en producción. He liderado técnicamente soluciones empresariales para Movistar, Claro y Telefónica, y hoy desarrollo plataformas de cumplimiento empresarial (AML y due diligence) y de IA aplicada.</p>
+            <p class="about-page__location" data-i18n="about.intro.location">Bogotá, Colombia · Remoto</p>
+        </section>
+
+        <section class="about-page__section" data-reveal>
+            <h2 data-i18n="about.skills.title">En qué me especializo</h2>
+            <ul class="about-page__skills">
+                <li class="about-page__card">
+                    <h3 data-i18n="about.skills.items.0.title">Full stack con TypeScript</h3>
+                    <p data-i18n="about.skills.items.0.text">APIs con NestJS y Node.js, e interfaces con Nuxt, Vue, React y Angular.</p>
+                </li>
+                <li class="about-page__card">
+                    <h3 data-i18n="about.skills.items.1.title">Cloud y DevOps</h3>
+                    <p data-i18n="about.skills.items.1.text">AWS (EC2, RDS, S3, Textract), Docker, NGINX y CI/CD con GitHub Actions.</p>
+                </li>
+                <li class="about-page__card">
+                    <h3 data-i18n="about.skills.items.2.title">IA aplicada</h3>
+                    <p data-i18n="about.skills.items.2.text">Arquitecturas RAG con Gemini, OpenAI API y LangChain para asistentes y automatización.</p>
+                </li>
+                <li class="about-page__card">
+                    <h3 data-i18n="about.skills.items.3.title">Visión por computadora y OCR</h3>
+                    <p data-i18n="about.skills.items.3.text">OpenCV y AWS Textract para analizar imágenes y extraer datos de documentos.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about-page__section" data-reveal>
+            <h2 data-i18n="about.experience.title">Experiencia</h2>
+            <ol class="about-page__timeline">
+                <li class="about-page__job">
+                    <h3><span data-i18n="about.experience.jobs.0.role">Full Stack Developer</span> · Kubo SAS</h3>
+                    <p class="about-page__period" data-i18n="about.experience.jobs.0.period">Abr 2025 – Actualidad · Híbrido, Bogotá</p>
+                    <ul>
+                        <li data-i18n="about.experience.jobs.0.items.0">API y frontend con NestJS, Nuxt y TypeScript para plataformas de cumplimiento empresarial, agro, elecciones y salud.</li>
+                        <li data-i18n="about.experience.jobs.0.items.1">Plataforma B2B internacional de verificación empresarial: onboarding documental, revisión AML, due diligence por niveles y Trust Score para empresas en más de 50 países.</li>
+                        <li data-i18n="about.experience.jobs.0.items.2">Asistente agrícola con IA: RAG con Gemini File Search y diagnóstico de plagas y enfermedades por imagen.</li>
+                        <li data-i18n="about.experience.jobs.0.items.3">Sistema electoral en tiempo real con mapa SVG interactivo por municipio y OCR con AWS Textract para generar resoluciones PDF.</li>
+                    </ul>
+                </li>
+                <li class="about-page__job">
+                    <h3><span data-i18n="about.experience.jobs.1.role">Full Stack Developer | Líder Técnico</span> · Mentius S.A.S</h3>
+                    <p class="about-page__period" data-i18n="about.experience.jobs.1.period">May 2021 – Oct 2025 · Bogotá</p>
+                    <ul>
+                        <li data-i18n="about.experience.jobs.1.items.0">Liderazgo técnico en soluciones empresariales para Movistar, Claro y Telefónica.</li>
+                        <li data-i18n="about.experience.jobs.1.items.1">Definición de la arquitectura y de las decisiones técnicas clave en proyectos full stack de principio a fin.</li>
+                        <li data-i18n="about.experience.jobs.1.items.2">Intranets corporativas, CRMs y sistemas de RRHH y control de personal a medida.</li>
+                        <li data-i18n="about.experience.jobs.1.items.3">Metodologías ágiles que redujeron los tiempos de entrega en un 30%.</li>
+                    </ul>
+                </li>
+                <li class="about-page__job">
+                    <h3 data-i18n="about.experience.jobs.2.role">Full Stack Developer — Freelance</h3>
+                    <p class="about-page__period" data-i18n="about.experience.jobs.2.period">Ene 2019 – Actualidad · Remoto</p>
+                    <ul>
+                        <li data-i18n="about.experience.jobs.2.items.0">Más de 20 proyectos web entregados: CRMs, intranets, plataformas de automatización y asistentes virtuales.</li>
+                        <li data-i18n="about.experience.jobs.2.items.1">APIs RESTful con Node.js, NestJS y Laravel; CI/CD con GitHub Actions; infraestructura con Docker y NGINX.</li>
+                        <li data-i18n="about.experience.jobs.2.items.2">Integración de OpenAI API y Gemini API para asistentes virtuales y automatización de procesos.</li>
+                        <li data-i18n="about.experience.jobs.2.items.3">Pasarelas de pago (Bold, Avalpay, PayPal) y visión por computadora con OpenCV.</li>
+                    </ul>
+                </li>
+                <li class="about-page__job">
+                    <h3><span data-i18n="about.experience.jobs.3.role">Contratista</span> · Azuero Editores Ltda.</h3>
+                    <p class="about-page__period" data-i18n="about.experience.jobs.3.period">Ene 2017 – Ene 2020</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="about-page__section about-page__beyond" data-reveal>
+            <h2 data-i18n="about.beyond.title">Más allá del código</h2>
+            <p data-i18n="about.beyond.text">Soy cofundador y único desarrollador de OneLessonPerDay, una plataforma de impacto social que conecta refugios de animales con adoptantes. Centraliza la gestión de los refugios: el proceso de adopción, las citas veterinarias, las alertas de desparasitación y un mapa interactivo de Colombia por departamento y municipio.</p>
+        </section>
+
+        <section class="about-page__section about-page__columns" data-reveal>
+            <div>
+                <h2 data-i18n="about.education.title">Formación</h2>
+                <ul class="about-page__list">
+                    <li><strong data-i18n="about.education.items.0">Técnico en Software</strong> SENA · 2025</li>
+                    <li><strong data-i18n="about.education.items.1">Back-End Development</strong> Oracle Next Education · Alura Latam · 2024</li>
+                    <li><strong data-i18n="about.education.items.2">Front-End Development</strong> Oracle Next Education · Alura Latam · 2023</li>
+                    <li><strong data-i18n="about.education.items.3">Claude Code 101 e Introduction to Subagents</strong> Anthropic · 2026</li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-i18n="about.languages.title">Idiomas</h2>
+                <ul class="about-page__list">
+                    <li data-i18n="about.languages.items.0">Español — nativo</li>
+                    <li data-i18n="about.languages.items.1">Inglés — intermedio (en progreso)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-page__section about-page__contact" data-reveal>
+            <h2 data-i18n="about.contact.title">¿Construimos algo juntos?</h2>
+            <p data-i18n="about.contact.text">Estoy abierto a nuevos proyectos y oportunidades, en remoto o híbrido.</p>
+            <div class="about-page__actions">
+                <a href="mailto:Ingjuandavid@hotmail.com" class="button" data-i18n="about.contact.cta">Escríbeme</a>
+                <a href="../" class="button button--ghost" data-i18n="about.contact.back">Volver al inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../assets/js/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.about-preview {
+  @include container;
+  display: grid;
+  gap: $space-xl;
+  align-items: center;
+  padding-block: $space-2xl;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-md;
+
+    p {
+      max-width: 52ch;
+      line-height: $lh-loose;
+    }
+
+    .button {
+      margin-top: $space-sm;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-md;
+  }
+
+  @include respond(lg) {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}

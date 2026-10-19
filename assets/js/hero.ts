@@ -1,28 +1,5 @@
 import gsap from 'gsap';
-import {
-  siDocker,
-  siGithub,
-  siNodedotjs,
-  siPostgresql,
-  siReact,
-  siTypescript,
-  siVuedotjs,
-  type SimpleIcon,
-} from 'simple-icons';
-
-type Tech = { label: string; icon?: SimpleIcon };
-
-// simple-icons no longer ships the AWS logo, so it is rendered as text.
-const stack: Tech[] = [
-  { label: 'TypeScript', icon: siTypescript },
-  { label: 'Node.js', icon: siNodedotjs },
-  { label: 'React', icon: siReact },
-  { label: 'Vue', icon: siVuedotjs },
-  { label: 'Docker', icon: siDocker },
-  { label: 'AWS' },
-  { label: 'PostgreSQL', icon: siPostgresql },
-  { label: 'GitHub', icon: siGithub },
-];
+import { stack, techGraphic } from './stack';
 
 const directions = {
   right: { x: '60vw' },
@@ -33,17 +10,13 @@ const directions = {
 
 function renderStack(list: HTMLElement) {
   list.innerHTML = stack
-    .map(({ label, icon }) => {
-      const graphic = icon
-        ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${icon.path}"/></svg>`
-        : `<span class="hero__aws" aria-hidden="true">aws</span>`;
-      return `<li class="hero__tech">${graphic}<span>${label}</span></li>`;
-    })
+    .map((tech) => `<li class="hero__tech">${techGraphic(tech, 'hero__aws')}<span>${tech.label}</span></li>`)
     .join('');
 }
 
-export function initHero() {
-  const hero = document.querySelector<HTMLElement>('.hero');
+// Scoped to the Barba container: during a transition the outgoing page is still in the DOM.
+export function initHero(root: ParentNode = document) {
+  const hero = root.querySelector<HTMLElement>('.hero');
   if (!hero) return;
 
   const list = hero.querySelector<HTMLElement>('.hero__stack');
@@ -107,5 +80,5 @@ export function initHero() {
     tl.from(item, { ...directions[from], autoAlpha: 0 }, i * 0.3);
   });
 
-  tl.from('.hero__tech', { y: 20, autoAlpha: 0, duration: 0.6, stagger: 0.1 });
+  tl.from(hero.querySelectorAll('.hero__tech'), { y: 20, autoAlpha: 0, duration: 0.6, stagger: 0.1 });
 }

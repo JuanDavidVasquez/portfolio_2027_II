@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.lang-switch {
+  display: flex;
+  padding: 2px;
+  border: $border;
+  border-radius: $radius-full;
+  background: rgba($bg-primary, 0.6);
+  backdrop-filter: blur(8px);
+
+  button {
+    padding: $space-xs $space-sm;
+    border: 0;
+    border-radius: $radius-full;
+    background: transparent;
+    color: $text-secondary;
+    font-size: $fs-xs;
+    cursor: pointer;
+    transition: color $duration-fast $ease-out, background $duration-fast $ease-out;
+
+    &:hover {
+      color: $text-primary;
+    }
+
+    &[aria-pressed='true'] {
+      background: $text-accent;
+      color: $bg-primary;
+    }
+  }
+}

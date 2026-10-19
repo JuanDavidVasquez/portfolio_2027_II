@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+  padding: $space-lg;
+  border: $border;
+  border-radius: $radius-lg;
+  background: rgba($bg-primary, 0.4);
+
+  &__value {
+    font-family: $font-heading;
+    font-size: $fs-2xl;
+    font-weight: $fw-bold;
+    line-height: $lh-tight;
+    font-variant-numeric: tabular-nums;
+    background: $gradient-primary;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__label {
+    color: $text-secondary;
+    font-size: $fs-sm;
+  }
+}

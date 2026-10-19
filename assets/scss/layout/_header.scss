@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+
+// Right-aligned so it stays clear of the hero's tech stack, which sits near the top center.
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: $z-header;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $space-lg;
+  padding: $space-md $space-lg $space-lg;
+  background: linear-gradient(to bottom, rgba($bg-primary, 0.92) 40%, transparent);
+  font-family: $font-mono;
+  font-size: $fs-sm;
+  pointer-events: none;
+
+  > * {
+    pointer-events: auto;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $space-lg;
+
+    a {
+      position: relative;
+      color: $text-secondary;
+      transition: color $duration-fast $ease-out;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: auto 0 -4px;
+        height: 1px;
+        background: $text-accent;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform $duration-base $ease-out;
+      }
+
+      &:hover,
+      &[aria-current='page'] {
+        color: $text-primary;
+      }
+
+      &[aria-current='page']::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  @media (orientation: portrait) {
+    gap: $space-md;
+    padding: $space-md;
+
+    &__nav {
+      gap: $space-md;
+    }
+  }
+}

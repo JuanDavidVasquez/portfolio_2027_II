@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "lang": "Idioma"
+  },
+  "home": {
+    "meta": {
+      "title": "Juan Vasquez · Software Engineer"
+    },
+    "hero": {
+      "role": "Software Engineer",
+      "stack": "Tecnologías"
+    },
+    "about": {
+      "eyebrow": "Sobre mí",
+      "title": "Construyo productos web de punta a punta",
+      "text": "Soy Senior Full Stack Software Engineer con más de 8 años diseñando y desplegando aplicaciones web escalables, desde la API hasta el frontend en producción. Lideré técnicamente soluciones para Movistar, Claro y Telefónica, y hoy desarrollo plataformas de cumplimiento empresarial e IA aplicada.",
+      "stats": {
+        "years": "años de experiencia",
+        "projects": "proyectos entregados",
+        "countries": "países con empresas verificadas",
+        "delivery": "menos en tiempos de entrega"
+      },
+      "cta": "Conocer más"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre mí · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "Sobre mí",
+      "title": "Hola, soy Juan David Vásquez",
+      "role": "Senior Full Stack Software Engineer · Cloud & AI Solutions",
+      "text": "Llevo más de 8 años diseñando y desplegando aplicaciones web escalables, desde la API hasta el frontend en producción. He liderado técnicamente soluciones empresariales para Movistar, Claro y Telefónica, y hoy desarrollo plataformas de cumplimiento empresarial (AML y due diligence) y de IA aplicada.",
+      "location": "Bogotá, Colombia · Remoto"
+    },
+    "skills": {
+      "title": "En qué me especializo",
+      "items": [
+        {
+          "title": "Full stack con TypeScript",
+          "text": "APIs con NestJS y Node.js, e interfaces con Nuxt, Vue, React y Angular."
+        },
+        {
+          "title": "Cloud y DevOps",
+          "text": "AWS (EC2, RDS, S3, Textract), Docker, NGINX y CI/CD con GitHub Actions."
+        },
+        {
+          "title": "IA aplicada",
+          "text": "Arquitecturas RAG con Gemini, OpenAI API y LangChain para asistentes y automatización."
+        },
+        {
+          "title": "Visión por computadora y OCR",
+          "text": "OpenCV y AWS Textract para analizar imágenes y extraer datos de documentos."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "jobs": [
+        {
+          "role": "Full Stack Developer",
+          "period": "Abr 2025 – Actualidad · Híbrido, Bogotá",
+          "items": [
+            "API y frontend con NestJS, Nuxt y TypeScript para plataformas de cumplimiento empresarial, agro, elecciones y salud.",
+            "Plataforma B2B internacional de verificación empresarial: onboarding documental, revisión AML, due diligence por niveles y Trust Score para empresas en más de 50 países.",
+            "Asistente agrícola con IA: RAG con Gemini File Search y diagnóstico de plagas y enfermedades por imagen.",
+            "Sistema electoral en tiempo real con mapa SVG interactivo por municipio y OCR con AWS Textract para generar resoluciones PDF."
+          ]
+        },
+        {
+          "role": "Full Stack Developer | Líder Técnico",
+          "period": "May 2021 – Oct 2025 · Bogotá",
+          "items": [
+            "Liderazgo técnico en soluciones empresariales para Movistar, Claro y Telefónica.",
+            "Definición de la arquitectura y de las decisiones técnicas clave en proyectos full stack de principio a fin.",
+            "Intranets corporativas, CRMs y sistemas de RRHH y control de personal a medida.",
+            "Metodologías ágiles que redujeron los tiempos de entrega en un 30%."
+          ]
+        },
+        {
+          "role": "Full Stack Developer — Freelance",
+          "period": "Ene 2019 – Actualidad · Remoto",
+          "items": [
+            "Más de 20 proyectos web entregados: CRMs, intranets, plataformas de automatización y asistentes virtuales.",
+            "APIs RESTful con Node.js, NestJS y Laravel; CI/CD con GitHub Actions; infraestructura con Docker y NGINX.",
+            "Integración de OpenAI API y Gemini API para asistentes virtuales y automatización de procesos.",
+            "Pasarelas de pago (Bold, Avalpay, PayPal) y visión por computadora con OpenCV."
+          ]
+        },
+        {
+          "role": "Contratista",
+          "period": "Ene 2017 – Ene 2020",
+          "items": []
+        }
+      ]
+    },
+    "beyond": {
+      "title": "Más allá del código",
+      "text": "Soy cofundador y único desarrollador de OneLessonPerDay, una plataforma de impacto social que conecta refugios de animales con adoptantes. Centraliza la gestión de los refugios: el proceso de adopción, las citas veterinarias, las alertas de desparasitación y un mapa interactivo de Colombia por departamento y municipio."
+    },
+    "education": {
+      "title": "Formación",
+      "items": [
+        "Técnico en Software",
+        "Back-End Development",
+        "Front-End Development",
+        "Claude Code 101 e Introduction to Subagents"
+      ]
+    },
+    "languages": {
+      "title": "Idiomas",
+      "items": [
+        "Español — nativo",
+        "Inglés — intermedio (en progreso)"
+      ]
+    },
+    "contact": {
+      "title": "¿Construimos algo juntos?",
+      "text": "Estoy abierto a nuevos proyectos y oportunidades, en remoto o híbrido.",
+      "cta": "Escríbeme",
+      "back": "Volver al inicio"
+    }
+  }
+}

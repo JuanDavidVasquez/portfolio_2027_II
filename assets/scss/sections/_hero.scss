@@ -64,14 +64,15 @@
     &--lapiz   { left: 58%; top: 73%; width: 9%;  z-index: 5; }
   }
 
+  // Kept between the title and the hanging plant of the background so no scene item covers it.
   &__stack {
     position: absolute;
-    left: 50%;
-    top: 12%;
+    left: 32%;
+    top: 6%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: $space-md $space-lg;
-    width: 26%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: $space-md;
+    width: 32%;
   }
 
   &__tech {
