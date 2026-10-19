@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Vasquez</title>
+    <title>Juan Vasquez · Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
     <link rel="stylesheet" href="./assets/scss/main.scss">
 </head>
 <body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="home">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="./" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="./about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home" data-i18n-title="home.meta.title">
         <section class="hero">
             <div class="hero__content">
                 <div class="hero__heading">
                     <h1>Juan Vasquez</h1>
-                    <p>Software Engineer</p>
+                    <p data-i18n="home.hero.role">Software Engineer</p>
                 </div>
             </div>
 
             <div class="hero__scene">
-                <ul class="hero__stack" aria-label="Tecnologías"></ul>
+                <ul class="hero__stack" aria-label="Tecnologías" data-i18n-attr="aria-label:home.hero.stack"></ul>
                 <img src="./assets/img/hero/monitor.png" class="hero__item hero__item--monitor" data-from="right" alt="">
                 <img src="./assets/img/hero/matera.png" class="hero__item hero__item--matera" data-from="top" alt="">
                 <img src="./assets/img/hero/laptop.png" class="hero__item hero__item--laptop" data-from="right" alt="">
@@ -30,8 +41,33 @@
                 <img src="./assets/img/hero/lapiz.png" class="hero__item hero__item--lapiz" data-from="bottom" alt="">
             </div>
         </section>
-        <section class="about">
-            <h2>Sobre mí</h2>
+
+        <section class="about-preview">
+            <div class="about-preview__text" data-reveal>
+                <span class="eyebrow" data-i18n="home.about.eyebrow">Sobre mí</span>
+                <h2 data-i18n="home.about.title">Construyo productos web de punta a punta</h2>
+                <p data-i18n="home.about.text">Soy Senior Full Stack Software Engineer con más de 8 años diseñando y desplegando aplicaciones web escalables, desde la API hasta el frontend en producción. Lideré técnicamente soluciones para Movistar, Claro y Telefónica, y hoy desarrollo plataformas de cumplimiento empresarial e IA aplicada.</p>
+                <a href="./about/" class="button" data-i18n="home.about.cta">Conocer más</a>
+            </div>
+
+            <ul class="about-preview__stats" data-reveal>
+                <li class="stat">
+                    <span class="stat__value"><span data-count="8">8</span>+</span>
+                    <span class="stat__label" data-i18n="home.about.stats.years">años de experiencia</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__value"><span data-count="20">20</span>+</span>
+                    <span class="stat__label" data-i18n="home.about.stats.projects">proyectos entregados</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__value"><span data-count="50">50</span>+</span>
+                    <span class="stat__label" data-i18n="home.about.stats.countries">países con empresas verificadas</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__value"><span data-count="30">30</span>%</span>
+                    <span class="stat__label" data-i18n="home.about.stats.delivery">menos en tiempos de entrega</span>
+                </li>
+            </ul>
         </section>
     </main>
 

@@ -1,0 +1,162 @@
+@use '../abstracts' as *;
+
+.about-page {
+  @include container;
+  padding-block: $space-2xl;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-md;
+    min-height: 70vh;
+    min-height: 70svh;
+    justify-content: center;
+
+    // Hidden until GSAP animates them in, to avoid a flash before the JS loads.
+    > * {
+      visibility: hidden;
+    }
+  }
+
+  &__role {
+    color: $text-primary;
+    font-family: $font-mono;
+    font-size: $fs-base;
+  }
+
+  &__lead {
+    max-width: 62ch;
+    font-size: $fs-lg;
+    line-height: $lh-loose;
+  }
+
+  &__location {
+    font-family: $font-mono;
+    font-size: $fs-sm;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+    padding-block: $space-xl;
+    border-top: $border;
+  }
+
+  &__skills {
+    display: grid;
+    gap: $space-md;
+
+    @include respond(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+    padding: $space-lg;
+    border: $border;
+    border-radius: $radius-lg;
+    background: $bg-secondary;
+    transition: border-color $duration-base $ease-out;
+
+    &:hover {
+      border-color: $text-accent;
+    }
+
+    h3 {
+      font-size: $fs-lg;
+    }
+  }
+
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+    padding-left: $space-lg;
+    border-left: $border;
+  }
+
+  &__job {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+
+    // Dot sitting on the timeline line.
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.55em;
+      left: calc(-#{$space-lg} - 5px);
+      width: 9px;
+      height: 9px;
+      border-radius: $radius-full;
+      background: $text-accent;
+    }
+
+    h3 {
+      font-size: $fs-lg;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $space-xs;
+      color: $text-secondary;
+      list-style: disc;
+      padding-left: $space-md;
+    }
+  }
+
+  &__period {
+    font-family: $font-mono;
+    font-size: $fs-sm;
+  }
+
+  &__beyond p {
+    max-width: 70ch;
+    line-height: $lh-loose;
+  }
+
+  &__columns {
+    display: grid;
+    gap: $space-xl;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: $space-lg;
+    }
+
+    @include respond(md) {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    color: $text-secondary;
+
+    strong {
+      display: block;
+      color: $text-primary;
+      font-weight: $fw-medium;
+    }
+  }
+
+  &__contact {
+    align-items: flex-start;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+}

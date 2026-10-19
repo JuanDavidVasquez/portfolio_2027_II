@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@barba/core": ["./node_modules/@barba/core/dist/src/index.d.ts"]
+    }
+  },
+  "include": ["assets/**/*.ts", "vite.config.ts"]
+}

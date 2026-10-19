@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-sm;
+  padding: $space-sm $space-lg;
+  border: $border-width solid transparent;
+  border-radius: $radius-full;
+  background: $gradient-primary;
+  color: $bg-primary;
+  font-weight: $fw-medium;
+  transition: box-shadow $duration-base $ease-out, transform $duration-base $ease-out;
+
+  &:hover {
+    box-shadow: $shadow-glow;
+    transform: translateY(-2px);
+  }
+
+  &--ghost {
+    border-color: $border-color;
+    background: transparent;
+    color: $text-primary;
+
+    &:hover {
+      border-color: $text-accent;
+      box-shadow: none;
+    }
+  }
+}

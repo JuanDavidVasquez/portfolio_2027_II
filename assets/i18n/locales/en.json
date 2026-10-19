@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About me",
+    "lang": "Language"
+  },
+  "home": {
+    "meta": {
+      "title": "Juan Vasquez · Software Engineer"
+    },
+    "hero": {
+      "role": "Software Engineer",
+      "stack": "Tech stack"
+    },
+    "about": {
+      "eyebrow": "About me",
+      "title": "I build web products end to end",
+      "text": "I'm a Senior Full Stack Software Engineer with 8+ years designing and shipping scalable web applications, from the API to the frontend in production. I've been the technical lead on solutions for Movistar, Claro and Telefónica, and today I build enterprise compliance and applied AI platforms.",
+      "stats": {
+        "years": "years of experience",
+        "projects": "projects delivered",
+        "countries": "countries with verified companies",
+        "delivery": "shorter delivery times"
+      },
+      "cta": "Learn more"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About me · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "About me",
+      "title": "Hi, I'm Juan David Vásquez",
+      "role": "Senior Full Stack Software Engineer · Cloud & AI Solutions",
+      "text": "For more than 8 years I've been designing and shipping scalable web applications, from the API to the frontend in production. I've been the technical lead on enterprise solutions for Movistar, Claro and Telefónica, and today I build enterprise compliance (AML and due diligence) and applied AI platforms.",
+      "location": "Bogotá, Colombia · Remote"
+    },
+    "skills": {
+      "title": "What I specialize in",
+      "items": [
+        {
+          "title": "Full stack with TypeScript",
+          "text": "APIs with NestJS and Node.js, and interfaces with Nuxt, Vue, React and Angular."
+        },
+        {
+          "title": "Cloud and DevOps",
+          "text": "AWS (EC2, RDS, S3, Textract), Docker, NGINX and CI/CD with GitHub Actions."
+        },
+        {
+          "title": "Applied AI",
+          "text": "RAG architectures with Gemini, the OpenAI API and LangChain for assistants and automation."
+        },
+        {
+          "title": "Computer vision and OCR",
+          "text": "OpenCV and AWS Textract to analyze images and extract data from documents."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "jobs": [
+        {
+          "role": "Full Stack Developer",
+          "period": "Apr 2025 – Present · Hybrid, Bogotá",
+          "items": [
+            "API and frontend with NestJS, Nuxt and TypeScript for enterprise compliance, agriculture, elections and healthcare platforms.",
+            "International B2B business verification platform: document onboarding, AML review, tiered due diligence and a Trust Score for companies in 50+ countries.",
+            "AI agricultural assistant: RAG with Gemini File Search and image-based diagnosis of pests and diseases.",
+            "Real-time election system with an interactive SVG map by municipality and OCR with AWS Textract to generate PDF resolutions."
+          ]
+        },
+        {
+          "role": "Full Stack Developer | Tech Lead",
+          "period": "May 2021 – Oct 2025 · Bogotá",
+          "items": [
+            "Technical leadership on enterprise solutions for Movistar, Claro and Telefónica.",
+            "Defined the architecture and the key technical decisions on full stack projects from start to finish.",
+            "Custom corporate intranets, CRMs, and HR and workforce management systems.",
+            "Agile methodologies that cut delivery times by 30%."
+          ]
+        },
+        {
+          "role": "Full Stack Developer — Freelance",
+          "period": "Jan 2019 – Present · Remote",
+          "items": [
+            "20+ web projects delivered: CRMs, intranets, automation platforms and virtual assistants.",
+            "RESTful APIs with Node.js, NestJS and Laravel; CI/CD with GitHub Actions; infrastructure with Docker and NGINX.",
+            "OpenAI API and Gemini API integrations for virtual assistants and process automation.",
+            "Payment gateways (Bold, Avalpay, PayPal) and computer vision with OpenCV."
+          ]
+        },
+        {
+          "role": "Contractor",
+          "period": "Jan 2017 – Jan 2020",
+          "items": []
+        }
+      ]
+    },
+    "beyond": {
+      "title": "Beyond code",
+      "text": "I'm the co-founder and sole developer of OneLessonPerDay, a social impact platform that connects animal shelters with adopters. It centralizes shelter management: the adoption process, vet appointments, deworming alerts and an interactive map of Colombia by department and municipality."
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        "Software Technician",
+        "Back-End Development",
+        "Front-End Development",
+        "Claude Code 101 and Introduction to Subagents"
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        "Spanish — native",
+        "English — intermediate (in progress)"
+      ]
+    },
+    "contact": {
+      "title": "Shall we build something together?",
+      "text": "I'm open to new projects and opportunities, remote or hybrid.",
+      "cta": "Get in touch",
+      "back": "Back to home"
+    }
+  }
+}

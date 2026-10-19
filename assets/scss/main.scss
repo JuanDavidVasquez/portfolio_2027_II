@@ -2,6 +2,19 @@
 @use 'base/reset';
 @use 'base/typography';
 
+// Layout
+@use 'layout/header';
+
+// Components
+@use 'components/button';
+@use 'components/eyebrow';
+@use 'components/lang-switch';
+@use 'components/page-transition';
+@use 'components/stat';
+
 // Sections
 @use 'sections/hero';
-@use 'sections/about';
+@use 'sections/about-preview';
+
+// Pages
+@use 'pages/about';

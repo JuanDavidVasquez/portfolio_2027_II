@@ -1,0 +1,101 @@
+@use '../abstracts' as *;
+
+// Built by assets/js/transition.ts; it stays hidden between navigations.
+.page-transition {
+  --accent: #{$text-accent};
+  --icon-size: clamp(38px, 4.2vw, 56px);
+
+  position: fixed;
+  inset: 0;
+  z-index: $z-overlay;
+  overflow: hidden;
+  visibility: hidden;
+
+  &__panel {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 50% 50%, rgba($text-accent, 0.08), transparent 55%),
+      $bg-primary;
+
+    &--accent {
+      background: $gradient-primary;
+    }
+  }
+
+  &__stage {
+    position: absolute;
+    inset: 0;
+    @include flex-center;
+  }
+
+  // Zero-sized anchor at the center of the screen; JS spreads the icons around it.
+  &__orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    top: calc(var(--icon-size) / -2);
+    left: calc(var(--icon-size) / -2);
+    @include flex-center;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border: $border;
+    border-radius: $radius-full;
+    background: rgba($bg-secondary, 0.85);
+    color: $text-secondary;
+    // Follows the color sweep, so each icon glows in accent as it lights up.
+    box-shadow: 0 0 24px -8px currentColor;
+
+    svg {
+      width: 45%;
+      height: auto;
+      fill: currentColor;
+    }
+  }
+
+  &__aws {
+    font-family: $font-body;
+    font-weight: $fw-bold;
+    font-size: calc(var(--icon-size) * 0.28);
+  }
+
+  &__center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-sm;
+    text-align: center;
+  }
+
+  &__eyebrow {
+    color: $text-secondary;
+    font-family: $font-mono;
+    font-size: $fs-xs;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    color: $text-primary;
+    font-family: $font-heading;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: $fw-bold;
+    line-height: $lh-tight;
+  }
+
+  &__bar {
+    width: 120px;
+    height: 2px;
+    margin-top: $space-sm;
+    border-radius: $radius-full;
+    background: $gradient-primary;
+    transform-origin: left center;
+  }
+}
