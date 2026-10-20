@@ -7,14 +7,19 @@
 
 // Components
 @use 'components/button';
+@use 'components/chip';
 @use 'components/eyebrow';
 @use 'components/lang-switch';
 @use 'components/page-transition';
+@use 'components/project-card';
 @use 'components/stat';
 
 // Sections
 @use 'sections/hero';
 @use 'sections/about-preview';
+@use 'sections/projects-preview';
 
 // Pages
 @use 'pages/about';
+@use 'pages/projects';
+@use 'pages/project';

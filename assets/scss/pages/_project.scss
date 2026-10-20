@@ -1,0 +1,147 @@
+@use '../abstracts' as *;
+
+.project-page {
+  @include container;
+  padding-block: $space-2xl;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-md;
+    min-height: 60vh;
+    min-height: 60svh;
+    justify-content: center;
+
+    // Hidden until GSAP animates them in, to avoid a flash before the JS loads.
+    > * {
+      visibility: hidden;
+    }
+  }
+
+  &__back {
+    color: $text-secondary;
+    font-family: $font-mono;
+    font-size: $fs-sm;
+    transition: color $duration-fast $ease-out;
+
+    &::before {
+      content: '← ';
+    }
+
+    &:hover {
+      color: $text-primary;
+    }
+  }
+
+  &__lead {
+    max-width: 62ch;
+    font-size: $fs-lg;
+    line-height: $lh-loose;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md $space-xl;
+    margin-block: $space-sm;
+
+    dt {
+      color: $text-accent;
+      font-family: $font-mono;
+      font-size: $fs-xs;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      color: $text-primary;
+    }
+  }
+
+  &__cover {
+    margin-block: $space-xl;
+    border-radius: $radius-lg;
+  }
+
+  &__section {
+    display: grid;
+    gap: $space-md;
+    padding-block: $space-xl;
+    border-top: $border;
+
+    h2 {
+      font-size: $fs-xl;
+    }
+
+    p {
+      max-width: 70ch;
+      line-height: $lh-loose;
+    }
+
+    @include respond(md) {
+      grid-template-columns: 1fr 2fr;
+      gap: $space-lg;
+    }
+  }
+
+  &__highlights {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+    color: $text-secondary;
+
+    li {
+      position: relative;
+      padding-left: $space-lg;
+      line-height: $lh-loose;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0.8em;
+        left: 0;
+        width: $space-md;
+        height: 1px;
+        background: $text-accent;
+      }
+    }
+  }
+
+  & &__result {
+    color: $text-primary;
+    font-size: $fs-lg;
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: $space-lg;
+    padding-top: $space-xl;
+    border-top: $border;
+  }
+
+  &__next {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+  }
+
+  &__next-title {
+    font-family: $font-heading;
+    font-size: $fs-2xl;
+    font-weight: $fw-bold;
+    line-height: $lh-tight;
+    transition: color $duration-fast $ease-out;
+
+    &::after {
+      content: ' →';
+    }
+  }
+
+  &__next:hover &__next-title {
+    color: $text-accent;
+  }
+}

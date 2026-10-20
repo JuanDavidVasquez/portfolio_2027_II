@@ -6,6 +6,8 @@ import { initHeader, routeFor, setActiveRoute } from './header';
 import { cover, uncover } from './transition';
 import { initAbout } from './views/about';
 import { initHome } from './views/home';
+import { initProject } from './views/project';
+import { initProjects } from './views/projects';
 
 gsap.registerPlugin(ScrollTrigger);
 // Mobile address bars resize the viewport while scrolling; refreshing on that makes pinned sections jump.
@@ -34,7 +36,12 @@ const view = (namespace: string, init: (container: HTMLElement) => gsap.Context)
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 barba.init({
-  views: [view('home', initHome), view('about', initAbout)],
+  views: [
+    view('home', initHome),
+    view('about', initAbout),
+    view('projects', initProjects),
+    view('project', initProject),
+  ],
   transitions: [
     {
       name: 'stack-orbit',

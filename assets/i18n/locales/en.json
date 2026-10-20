@@ -3,6 +3,7 @@
     "label": "Main navigation",
     "home": "Home",
     "about": "About me",
+    "projects": "Projects",
     "lang": "Language"
   },
   "home": {
@@ -24,6 +25,11 @@
         "delivery": "shorter delivery times"
       },
       "cta": "Learn more"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Recent work",
+      "cta": "See all projects"
     }
   },
   "about": {
@@ -123,6 +129,102 @@
       "text": "I'm open to new projects and opportunities, remote or hybrid.",
       "cta": "Get in touch",
       "back": "Back to home"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "Projects",
+      "title": "Case studies",
+      "text": "A selection of products I designed and built, from the API to the interface in production: enterprise compliance, applied AI, real-time data and social impact."
+    },
+    "labels": {
+      "role": "Role",
+      "company": "Context",
+      "year": "Year",
+      "stack": "Tech stack",
+      "context": "The challenge",
+      "solution": "The solution",
+      "highlights": "Highlights",
+      "result": "Outcome",
+      "view": "View case",
+      "next": "Next project",
+      "back": "Back to projects"
+    },
+    "items": {
+      "business-verification": {
+        "pageTitle": "Business verification platform · Juan Vasquez",
+        "type": "Enterprise compliance · B2B",
+        "title": "Business verification platform",
+        "tagline": "Document onboarding, AML review and tiered due diligence for companies in 50+ countries.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "Companies working with international partners need to know who they are dealing with. Checking documents, risk lists and background by hand is slow, inconsistent and hard to audit.",
+        "solution": "I built the API and frontend of a B2B platform that walks each company through document onboarding, centralizes AML review and applies different levels of due diligence based on risk, with a Trust Score that sums up the outcome.",
+        "highlights": [
+          "Step-by-step document onboarding for the company being verified.",
+          "AML review workflow for the compliance team.",
+          "Tiered due diligence based on the risk profile.",
+          "A Trust Score that sums up each company's verification status."
+        ],
+        "result": "The platform verifies companies from 50+ countries through a single, traceable workflow."
+      },
+      "agro-assistant": {
+        "pageTitle": "AI agricultural assistant · Juan Vasquez",
+        "type": "Applied AI · Agriculture",
+        "title": "AI agricultural assistant",
+        "tagline": "Answers grounded in technical documentation and pest and disease diagnosis from an image.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "Growers need quick answers about crops, pests and diseases, but reliable information is usually spread across technical documents that are hard to look up in the field.",
+        "solution": "I built an assistant with a RAG architecture on Gemini File Search that answers from the uploaded documentation, plus a module that analyzes crop images to suggest a diagnosis.",
+        "highlights": [
+          "RAG with Gemini File Search over agricultural technical documentation.",
+          "Pest and disease diagnosis from images.",
+          "API with NestJS and frontend with Nuxt."
+        ],
+        "result": "Growers ask in natural language and get answers backed by the sources, plus an initial diagnosis from a photo."
+      },
+      "elections": {
+        "pageTitle": "Real-time election system · Juan Vasquez",
+        "type": "Real time · Elections",
+        "title": "Real-time election system",
+        "tagline": "Live results on an interactive map by municipality and OCR to generate PDF resolutions.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "On election day results come in from many municipalities at once, and scanned documents have to become official resolutions without transcription errors.",
+        "solution": "I built a system that shows results in real time on an interactive SVG map by municipality, and an OCR workflow with AWS Textract that extracts the data from the documents and generates the PDF resolutions.",
+        "highlights": [
+          "Interactive SVG map with results by municipality.",
+          "Real-time result updates.",
+          "Document data extraction with AWS Textract.",
+          "Automatic generation of PDF resolutions."
+        ],
+        "result": "Election day is followed from a single map, and resolutions are generated with far less manual transcription."
+      },
+      "onelessonperday": {
+        "pageTitle": "OneLessonPerDay · Juan Vasquez",
+        "type": "Social impact · Personal project",
+        "title": "OneLessonPerDay",
+        "tagline": "A platform that connects animal shelters with adopters and centralizes shelter management.",
+        "role": "Co-founder and sole developer",
+        "company": "Personal project",
+        "year": "Ongoing",
+        "context": "Animal shelters often manage adoptions, vet appointments and treatments with spreadsheets and messages, and adopters struggle to find shelters near them.",
+        "solution": "I designed and built, end to end, a platform that centralizes shelter operations and makes shelters visible to adopters.",
+        "highlights": [
+          "End-to-end management of the adoption process.",
+          "Vet appointment scheduling.",
+          "Deworming alerts.",
+          "Interactive map of Colombia by department and municipality."
+        ],
+        "result": "Shelters work from a single place and adopters find animals near them."
+      }
     }
   }
 }

@@ -3,6 +3,7 @@
     "label": "Navegación principal",
     "home": "Inicio",
     "about": "Sobre mí",
+    "projects": "Proyectos",
     "lang": "Idioma"
   },
   "home": {
@@ -24,6 +25,11 @@
         "delivery": "menos en tiempos de entrega"
       },
       "cta": "Conocer más"
+    },
+    "projects": {
+      "eyebrow": "Proyectos",
+      "title": "Trabajo reciente",
+      "cta": "Ver todos los proyectos"
     }
   },
   "about": {
@@ -123,6 +129,102 @@
       "text": "Estoy abierto a nuevos proyectos y oportunidades, en remoto o híbrido.",
       "cta": "Escríbeme",
       "back": "Volver al inicio"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Proyectos · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "Proyectos",
+      "title": "Casos de estudio",
+      "text": "Una selección de productos que diseñé y construí, desde la API hasta la interfaz en producción: cumplimiento empresarial, IA aplicada, datos en tiempo real e impacto social."
+    },
+    "labels": {
+      "role": "Rol",
+      "company": "Contexto",
+      "year": "Año",
+      "stack": "Tecnologías",
+      "context": "El reto",
+      "solution": "La solución",
+      "highlights": "Lo más destacado",
+      "result": "Resultado",
+      "view": "Ver caso",
+      "next": "Siguiente proyecto",
+      "back": "Volver a proyectos"
+    },
+    "items": {
+      "business-verification": {
+        "pageTitle": "Plataforma de verificación empresarial · Juan Vasquez",
+        "type": "Cumplimiento empresarial · B2B",
+        "title": "Plataforma de verificación empresarial",
+        "tagline": "Onboarding documental, revisión AML y due diligence por niveles para empresas en más de 50 países.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "Las empresas que trabajan con socios internacionales necesitan saber con quién están tratando. Verificar documentos, listas de riesgo y antecedentes a mano es lento, poco consistente y difícil de auditar.",
+        "solution": "Desarrollé la API y el frontend de una plataforma B2B que guía a cada empresa por un onboarding documental, centraliza la revisión AML y aplica distintos niveles de due diligence según el riesgo, con un Trust Score que resume el resultado.",
+        "highlights": [
+          "Onboarding documental paso a paso para la empresa que se verifica.",
+          "Flujo de revisión AML para el equipo de cumplimiento.",
+          "Due diligence por niveles según el perfil de riesgo.",
+          "Trust Score que resume el estado de verificación de cada empresa."
+        ],
+        "result": "La plataforma verifica empresas de más de 50 países desde un único flujo trazable."
+      },
+      "agro-assistant": {
+        "pageTitle": "Asistente agrícola con IA · Juan Vasquez",
+        "type": "IA aplicada · Agro",
+        "title": "Asistente agrícola con IA",
+        "tagline": "Respuestas basadas en documentación técnica y diagnóstico de plagas y enfermedades a partir de una imagen.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "Los productores necesitan respuestas rápidas sobre cultivos, plagas y enfermedades, pero la información confiable suele estar repartida en documentos técnicos difíciles de consultar en campo.",
+        "solution": "Construí un asistente con arquitectura RAG sobre Gemini File Search que responde a partir de la documentación cargada, y un módulo que analiza imágenes del cultivo para sugerir un diagnóstico.",
+        "highlights": [
+          "RAG con Gemini File Search sobre documentación técnica agrícola.",
+          "Diagnóstico de plagas y enfermedades a partir de imágenes.",
+          "API con NestJS y frontend con Nuxt."
+        ],
+        "result": "El productor pregunta en lenguaje natural y recibe respuestas respaldadas por las fuentes, además de un diagnóstico inicial a partir de una foto."
+      },
+      "elections": {
+        "pageTitle": "Sistema electoral en tiempo real · Juan Vasquez",
+        "type": "Tiempo real · Elecciones",
+        "title": "Sistema electoral en tiempo real",
+        "tagline": "Resultados en vivo sobre un mapa interactivo por municipio y OCR para generar resoluciones en PDF.",
+        "role": "Full Stack Developer",
+        "company": "Kubo SAS",
+        "year": "2025",
+        "context": "En una jornada electoral los resultados llegan de muchos municipios a la vez, y los documentos escaneados deben convertirse en resoluciones oficiales sin errores de transcripción.",
+        "solution": "Desarrollé un sistema que muestra los resultados en tiempo real sobre un mapa SVG interactivo por municipio, y un flujo de OCR con AWS Textract que extrae los datos de los documentos y genera las resoluciones en PDF.",
+        "highlights": [
+          "Mapa SVG interactivo con resultados por municipio.",
+          "Actualización de resultados en tiempo real.",
+          "Extracción de datos de documentos con AWS Textract.",
+          "Generación automática de resoluciones en PDF."
+        ],
+        "result": "La jornada se sigue desde un solo mapa y las resoluciones se generan con mucha menos transcripción manual."
+      },
+      "onelessonperday": {
+        "pageTitle": "OneLessonPerDay · Juan Vasquez",
+        "type": "Impacto social · Proyecto propio",
+        "title": "OneLessonPerDay",
+        "tagline": "Plataforma que conecta refugios de animales con adoptantes y centraliza la gestión de los refugios.",
+        "role": "Cofundador y único desarrollador",
+        "company": "Proyecto propio",
+        "year": "En curso",
+        "context": "Los refugios de animales suelen gestionar adopciones, citas veterinarias y tratamientos con hojas de cálculo y mensajes, y a los adoptantes les cuesta encontrar refugios cerca de ellos.",
+        "solution": "Diseñé y desarrollé de punta a punta una plataforma que centraliza la operación del refugio y lo hace visible para los adoptantes.",
+        "highlights": [
+          "Gestión del proceso de adopción de principio a fin.",
+          "Agenda de citas veterinarias.",
+          "Alertas de desparasitación.",
+          "Mapa interactivo de Colombia por departamento y municipio."
+        ],
+        "result": "Los refugios trabajan desde un solo lugar y los adoptantes encuentran animales cerca de ellos."
+      }
     }
   }
 }

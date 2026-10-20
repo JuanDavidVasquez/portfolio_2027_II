@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.projects-preview {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+  padding-block: 0 $space-2xl;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: $space-md;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: $space-md;
+    }
+  }
+
+  // Two columns would leave the third card alone on its row, so it only shows on one or three columns.
+  .project-grid {
+    @include respond(md) {
+      > :nth-child(n + 3) {
+        display: none;
+      }
+    }
+
+    @include respond(lg) {
+      grid-template-columns: repeat(3, 1fr);
+
+      > :nth-child(n + 3) {
+        display: block;
+      }
+    }
+  }
+}

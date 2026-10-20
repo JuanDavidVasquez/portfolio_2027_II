@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de verificación empresarial · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="../../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="../" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="project" data-i18n-title="projects.items.business-verification.pageTitle" class="project-page">
+        <section class="project-page__intro">
+            <a href="../" class="project-page__back" data-i18n="projects.labels.back">Volver a proyectos</a>
+            <span class="eyebrow" data-i18n="projects.items.business-verification.type">Cumplimiento empresarial · B2B</span>
+            <h1 data-i18n="projects.items.business-verification.title">Plataforma de verificación empresarial</h1>
+            <p class="project-page__lead" data-i18n="projects.items.business-verification.tagline">Onboarding documental, revisión AML y due diligence por niveles para empresas en más de 50 países.</p>
+            <dl class="project-page__meta">
+                <div>
+                    <dt data-i18n="projects.labels.role">Rol</dt>
+                    <dd data-i18n="projects.items.business-verification.role">Full Stack Developer</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.company">Contexto</dt>
+                    <dd data-i18n="projects.items.business-verification.company">Kubo SAS</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.year">Año</dt>
+                    <dd data-i18n="projects.items.business-verification.year">2025</dd>
+                </div>
+            </dl>
+            <ul class="chips" aria-label="Tecnologías" data-i18n-attr="aria-label:projects.labels.stack">
+                <li class="chip">NestJS</li>
+                <li class="chip">Nuxt</li>
+                <li class="chip">TypeScript</li>
+                <li class="chip">AWS</li>
+            </ul>
+        </section>
+
+        <div class="project-cover project-page__cover" aria-hidden="true" data-reveal><span>AML</span></div>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.context">El reto</h2>
+            <p data-i18n="projects.items.business-verification.context">Las empresas que trabajan con socios internacionales necesitan saber con quién están tratando. Verificar documentos, listas de riesgo y antecedentes a mano es lento, poco consistente y difícil de auditar.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.solution">La solución</h2>
+            <p data-i18n="projects.items.business-verification.solution">Desarrollé la API y el frontend de una plataforma B2B que guía a cada empresa por un onboarding documental, centraliza la revisión AML y aplica distintos niveles de due diligence según el riesgo, con un Trust Score que resume el resultado.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.highlights">Lo más destacado</h2>
+            <ul class="project-page__highlights">
+                <li data-i18n="projects.items.business-verification.highlights.0">Onboarding documental paso a paso para la empresa que se verifica.</li>
+                <li data-i18n="projects.items.business-verification.highlights.1">Flujo de revisión AML para el equipo de cumplimiento.</li>
+                <li data-i18n="projects.items.business-verification.highlights.2">Due diligence por niveles según el perfil de riesgo.</li>
+                <li data-i18n="projects.items.business-verification.highlights.3">Trust Score que resume el estado de verificación de cada empresa.</li>
+            </ul>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.result">Resultado</h2>
+            <p class="project-page__result" data-i18n="projects.items.business-verification.result">La plataforma verifica empresas de más de 50 países desde un único flujo trazable.</p>
+        </section>
+
+        <nav class="project-page__footer" data-reveal>
+            <a href="../agro-assistant/" class="project-page__next">
+                <span class="eyebrow" data-i18n="projects.labels.next">Siguiente proyecto</span>
+                <span class="project-page__next-title" data-i18n="projects.items.agro-assistant.title">Asistente agrícola con IA</span>
+            </a>
+            <a href="../" class="button button--ghost" data-i18n="projects.labels.back">Volver a proyectos</a>
+        </nav>
+    </main>
+
+    <script type="module" src="../../assets/js/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+}
+
+.chip {
+  padding: $space-xs $space-md;
+  border: $border;
+  border-radius: $radius-full;
+  color: $text-secondary;
+  font-family: $font-mono;
+  font-size: $fs-xs;
+  white-space: nowrap;
+}

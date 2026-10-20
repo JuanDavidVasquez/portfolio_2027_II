@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="./" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="projects" data-i18n-title="projects.meta.title" class="projects-page">
+        <section class="projects-page__intro">
+            <span class="eyebrow" data-i18n="projects.intro.eyebrow">Proyectos</span>
+            <h1 data-i18n="projects.intro.title">Casos de estudio</h1>
+            <p class="projects-page__lead" data-i18n="projects.intro.text">Una selección de productos que diseñé y construí, desde la API hasta la interfaz en producción: cumplimiento empresarial, IA aplicada, datos en tiempo real e impacto social.</p>
+        </section>
+
+        <ul class="project-grid">
+            <li class="project-card" data-reveal>
+                <a href="./business-verification/" class="project-card__link">
+                    <div class="project-cover" aria-hidden="true"><span>AML</span></div>
+                    <div class="project-card__body">
+                        <span class="eyebrow" data-i18n="projects.items.business-verification.type">Cumplimiento empresarial · B2B</span>
+                        <h2 data-i18n="projects.items.business-verification.title">Plataforma de verificación empresarial</h2>
+                        <p data-i18n="projects.items.business-verification.tagline">Onboarding documental, revisión AML y due diligence por niveles para empresas en más de 50 países.</p>
+                        <ul class="chips">
+                            <li class="chip">NestJS</li>
+                            <li class="chip">Nuxt</li>
+                            <li class="chip">TypeScript</li>
+                            <li class="chip">AWS</li>
+                        </ul>
+                        <span class="project-card__cta" data-i18n="projects.labels.view">Ver caso</span>
+                    </div>
+                </a>
+            </li>
+            <li class="project-card" data-reveal>
+                <a href="./agro-assistant/" class="project-card__link">
+                    <div class="project-cover project-cover--alt" aria-hidden="true"><span>RAG</span></div>
+                    <div class="project-card__body">
+                        <span class="eyebrow" data-i18n="projects.items.agro-assistant.type">IA aplicada · Agro</span>
+                        <h2 data-i18n="projects.items.agro-assistant.title">Asistente agrícola con IA</h2>
+                        <p data-i18n="projects.items.agro-assistant.tagline">Respuestas basadas en documentación técnica y diagnóstico de plagas y enfermedades a partir de una imagen.</p>
+                        <ul class="chips">
+                            <li class="chip">Gemini</li>
+                            <li class="chip">RAG</li>
+                            <li class="chip">NestJS</li>
+                            <li class="chip">Nuxt</li>
+                        </ul>
+                        <span class="project-card__cta" data-i18n="projects.labels.view">Ver caso</span>
+                    </div>
+                </a>
+            </li>
+            <li class="project-card" data-reveal>
+                <a href="./elections/" class="project-card__link">
+                    <div class="project-cover project-cover--alt" aria-hidden="true"><span>SVG</span></div>
+                    <div class="project-card__body">
+                        <span class="eyebrow" data-i18n="projects.items.elections.type">Tiempo real · Elecciones</span>
+                        <h2 data-i18n="projects.items.elections.title">Sistema electoral en tiempo real</h2>
+                        <p data-i18n="projects.items.elections.tagline">Resultados en vivo sobre un mapa interactivo por municipio y OCR para generar resoluciones en PDF.</p>
+                        <ul class="chips">
+                            <li class="chip">AWS Textract</li>
+                            <li class="chip">SVG</li>
+                            <li class="chip">NestJS</li>
+                            <li class="chip">Nuxt</li>
+                        </ul>
+                        <span class="project-card__cta" data-i18n="projects.labels.view">Ver caso</span>
+                    </div>
+                </a>
+            </li>
+            <li class="project-card" data-reveal>
+                <a href="./onelessonperday/" class="project-card__link">
+                    <div class="project-cover" aria-hidden="true"><span>OLPD</span></div>
+                    <div class="project-card__body">
+                        <span class="eyebrow" data-i18n="projects.items.onelessonperday.type">Impacto social · Proyecto propio</span>
+                        <h2 data-i18n="projects.items.onelessonperday.title">OneLessonPerDay</h2>
+                        <p data-i18n="projects.items.onelessonperday.tagline">Plataforma que conecta refugios de animales con adoptantes y centraliza la gestión de los refugios.</p>
+                        <ul class="chips">
+                            <li class="chip">TypeScript</li>
+                            <li class="chip">Full stack</li>
+                        </ul>
+                        <span class="project-card__cta" data-i18n="projects.labels.view">Ver caso</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script type="module" src="../assets/js/main.ts"></script>
+</body>
+</html>
