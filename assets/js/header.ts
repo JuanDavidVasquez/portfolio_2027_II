@@ -3,6 +3,7 @@ import { getLang, setLang, type Lang } from '../i18n';
 const routes: Record<string, string> = {
   home: '',
   about: 'about/',
+  skills: 'skills/',
   projects: 'projects/',
 };
 
@@ -16,6 +17,11 @@ const sections: Record<string, string> = {
 export function initHeader(onLangChange: () => void) {
   document.querySelectorAll<HTMLAnchorElement>('[data-route]').forEach((link) => {
     link.href = import.meta.env.BASE_URL + routes[link.dataset.route!];
+  });
+
+  // The footer sits outside the container too, so its links to files in public/ need the same fix.
+  document.querySelectorAll<HTMLAnchorElement>('[data-asset]').forEach((link) => {
+    link.href = import.meta.env.BASE_URL + link.dataset.asset;
   });
 
   document.querySelectorAll<HTMLButtonElement>('[data-lang]').forEach((button) => {

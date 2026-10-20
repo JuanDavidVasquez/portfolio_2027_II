@@ -4,6 +4,7 @@
 
 // Layout
 @use 'layout/header';
+@use 'layout/footer';
 
 // Components
 @use 'components/button';
@@ -22,4 +23,6 @@
 // Pages
 @use 'pages/about';
 @use 'pages/projects';
+@use 'pages/skills';
 @use 'pages/project';
+@use 'pages/not-found';

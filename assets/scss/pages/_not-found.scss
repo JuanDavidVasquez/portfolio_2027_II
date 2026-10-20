@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+.not-found {
+  @include container;
+  display: grid;
+  align-content: center;
+  gap: $space-xl;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-block: $space-2xl;
+
+  @include respond(md) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-md;
+  }
+
+  &__lead {
+    max-width: 48ch;
+    font-size: $fs-lg;
+    line-height: $lh-loose;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+    margin-top: $space-sm;
+  }
+
+  &__scene {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__code {
+    font-family: $font-heading;
+    font-weight: $fw-bold;
+    font-size: clamp(6rem, 22vw, 14rem);
+    line-height: 1;
+    background: $gradient-primary;
+    background-clip: text;
+    color: transparent;
+  }
+
+  // Tipped over at the foot of the last 4, as if knocked off the desk of the home scene.
+  &__cup {
+    position: absolute;
+    right: 2%;
+    bottom: -24%;
+    width: clamp(64px, 14vw, 120px);
+    height: auto;
+    transform: rotate(-100deg);
+  }
+
+  // Hidden until GSAP animates them in, to avoid a flash before the JS loads.
+  &__content > *,
+  &__code,
+  &__cup {
+    visibility: hidden;
+  }
+}

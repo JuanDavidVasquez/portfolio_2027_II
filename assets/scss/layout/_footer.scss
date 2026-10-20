@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.site-footer {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-md $space-lg;
+  padding-block: $space-xl $space-lg;
+  border-top: $border;
+  font-family: $font-mono;
+  font-size: $fs-sm;
+  color: $text-secondary;
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md $space-lg;
+
+    a {
+      color: $text-secondary;
+      transition: color $duration-fast $ease-out;
+
+      &:hover {
+        color: $text-accent;
+      }
+    }
+  }
+
+  &__copy {
+    flex-basis: 100%;
+    font-size: $fs-xs;
+  }
+}

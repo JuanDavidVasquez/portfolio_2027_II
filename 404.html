@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Página no encontrada · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./assets/scss/main.scss">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="./" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="./about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="./skills/" data-route="skills" data-i18n="nav.skills">Habilidades</a>
+            <a href="./projects/" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <div data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="notfound" data-i18n-title="notFound.meta.title" class="not-found">
+        <section class="not-found__content">
+            <span class="eyebrow">Error 404</span>
+            <h1 data-i18n="notFound.title">Esta ruta no existe</h1>
+            <p class="not-found__lead" data-i18n="notFound.text">Puede que el enlace esté roto o que la página se haya movido.</p>
+            <div class="not-found__actions">
+                <a href="./" data-route="home" class="button" data-i18n="notFound.home">Volver al inicio</a>
+                <a href="./projects/" data-route="projects" class="button button--ghost" data-i18n="notFound.projects">Ver proyectos</a>
+            </div>
+        </section>
+
+        <div class="not-found__scene" aria-hidden="true">
+            <span class="not-found__code">404</span>
+            <img src="./assets/img/hero/pocillo.png" class="not-found__cup" alt="">
+        </div>
+    </main>
+    </div>
+
+    <footer class="site-footer">
+        <nav class="site-footer__links" aria-label="Contacto" data-i18n-attr="aria-label:footer.label">
+            <a href="mailto:Ingjuandavid@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/juan-david-vasquez-73778126/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/JuanDavidVasquez" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <a href="./docs/juan-david-vasquez-cv.pdf" data-asset="docs/juan-david-vasquez-cv.pdf" download="CV Juan David Vásquez.pdf" class="button button--ghost" data-i18n="footer.cv">Descargar CV</a>
+        <p class="site-footer__copy">© 2026 Juan David Vásquez · Bogotá, Colombia</p>
+    </footer>
+
+    <script type="module" src="./assets/js/main.ts"></script>
+</body>
+</html>

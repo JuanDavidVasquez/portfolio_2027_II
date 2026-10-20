@@ -53,6 +53,10 @@
     }
   }
 
+  &__more {
+    align-self: flex-start;
+  }
+
   &__card {
     display: flex;
     flex-direction: column;
