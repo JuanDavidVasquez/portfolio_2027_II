@@ -3,6 +3,12 @@ import { getLang, setLang, type Lang } from '../i18n';
 const routes: Record<string, string> = {
   home: '',
   about: 'about/',
+  projects: 'projects/',
+};
+
+// Detail pages have their own namespace but belong to the section that lists them.
+const sections: Record<string, string> = {
+  project: 'projects',
 };
 
 // The header lives outside the Barba container, so it is never re-rendered: its relative hrefs would break
@@ -25,13 +31,18 @@ export function initHeader(onLangChange: () => void) {
   syncLangButtons();
 }
 
+// Longest prefix wins, so /projects/<slug>/ resolves to projects instead of home.
 export function routeFor(path: string | undefined) {
-  return Object.keys(routes).find((name) => import.meta.env.BASE_URL + routes[name] === path);
+  if (!path) return undefined;
+  return Object.keys(routes)
+    .filter((name) => path.startsWith(import.meta.env.BASE_URL + routes[name]))
+    .sort((a, b) => routes[b].length - routes[a].length)[0];
 }
 
 export function setActiveRoute(namespace: string) {
+  const route = sections[namespace] ?? namespace;
   document.querySelectorAll<HTMLAnchorElement>('[data-route]').forEach((link) => {
-    if (link.dataset.route === namespace) link.setAttribute('aria-current', 'page');
+    if (link.dataset.route === route) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   });
 }

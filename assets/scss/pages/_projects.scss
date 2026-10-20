@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.projects-page {
+  @include container;
+  padding-block: $space-2xl;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-md;
+    min-height: 50vh;
+    min-height: 50svh;
+    justify-content: center;
+    margin-bottom: $space-xl;
+
+    // Hidden until GSAP animates them in, to avoid a flash before the JS loads.
+    > * {
+      visibility: hidden;
+    }
+  }
+
+  &__lead {
+    max-width: 62ch;
+    font-size: $fs-lg;
+    line-height: $lh-loose;
+  }
+}

@@ -1,0 +1,114 @@
+@use '../abstracts' as *;
+
+// Placeholder artwork until each project has a screenshot; an <img> placed inside fills it instead.
+.project-cover {
+  @include flex-center;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: $radius-md;
+  background:
+    radial-gradient(circle at 75% 20%, rgba($text-accent, 0.35), transparent 55%),
+    $gradient-dark;
+
+  span {
+    background: $gradient-primary;
+    background-clip: text;
+    color: transparent;
+    font-family: $font-mono;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: $fw-medium;
+    letter-spacing: 0.08em;
+  }
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--alt {
+    background:
+      radial-gradient(circle at 25% 80%, rgba(#6a5af9, 0.4), transparent 55%),
+      $gradient-dark;
+
+    span {
+      background-image: $gradient-secondary;
+    }
+  }
+}
+
+.project-grid {
+  display: grid;
+  gap: $space-lg;
+
+  @include respond(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  border: $border;
+  border-radius: $radius-lg;
+  background: $bg-secondary;
+  transition: border-color $duration-base $ease-out;
+
+  &:hover {
+    border-color: $text-accent;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    height: 100%;
+    padding: $space-md;
+  }
+
+  .project-cover {
+    transition: transform $duration-slow $ease-out;
+  }
+
+  &:hover .project-cover {
+    transform: scale(1.02);
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-sm;
+    padding: $space-sm;
+
+    h2,
+    h3 {
+      font-size: $fs-xl;
+    }
+
+    .chips {
+      margin-top: $space-sm;
+    }
+  }
+
+  &__cta {
+    margin-top: auto;
+    padding-top: $space-md;
+    color: $text-accent;
+    font-family: $font-mono;
+    font-size: $fs-sm;
+
+    &::after {
+      content: '→';
+      display: inline-block;
+      margin-left: 0.4em;
+      transition: transform $duration-base $ease-out;
+    }
+  }
+
+  &:hover &__cta::after {
+    transform: translateX(4px);
+  }
+}

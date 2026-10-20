@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneLessonPerDay · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="../../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="../" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="project" data-i18n-title="projects.items.onelessonperday.pageTitle" class="project-page">
+        <section class="project-page__intro">
+            <a href="../" class="project-page__back" data-i18n="projects.labels.back">Volver a proyectos</a>
+            <span class="eyebrow" data-i18n="projects.items.onelessonperday.type">Impacto social · Proyecto propio</span>
+            <h1 data-i18n="projects.items.onelessonperday.title">OneLessonPerDay</h1>
+            <p class="project-page__lead" data-i18n="projects.items.onelessonperday.tagline">Plataforma que conecta refugios de animales con adoptantes y centraliza la gestión de los refugios.</p>
+            <dl class="project-page__meta">
+                <div>
+                    <dt data-i18n="projects.labels.role">Rol</dt>
+                    <dd data-i18n="projects.items.onelessonperday.role">Cofundador y único desarrollador</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.company">Contexto</dt>
+                    <dd data-i18n="projects.items.onelessonperday.company">Proyecto propio</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.year">Año</dt>
+                    <dd data-i18n="projects.items.onelessonperday.year">En curso</dd>
+                </div>
+            </dl>
+            <ul class="chips" aria-label="Tecnologías" data-i18n-attr="aria-label:projects.labels.stack">
+                <li class="chip">TypeScript</li>
+                <li class="chip">Full stack</li>
+            </ul>
+        </section>
+
+        <div class="project-cover project-page__cover" aria-hidden="true" data-reveal><span>OLPD</span></div>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.context">El reto</h2>
+            <p data-i18n="projects.items.onelessonperday.context">Los refugios de animales suelen gestionar adopciones, citas veterinarias y tratamientos con hojas de cálculo y mensajes, y a los adoptantes les cuesta encontrar refugios cerca de ellos.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.solution">La solución</h2>
+            <p data-i18n="projects.items.onelessonperday.solution">Diseñé y desarrollé de punta a punta una plataforma que centraliza la operación del refugio y lo hace visible para los adoptantes.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.highlights">Lo más destacado</h2>
+            <ul class="project-page__highlights">
+                <li data-i18n="projects.items.onelessonperday.highlights.0">Gestión del proceso de adopción de principio a fin.</li>
+                <li data-i18n="projects.items.onelessonperday.highlights.1">Agenda de citas veterinarias.</li>
+                <li data-i18n="projects.items.onelessonperday.highlights.2">Alertas de desparasitación.</li>
+                <li data-i18n="projects.items.onelessonperday.highlights.3">Mapa interactivo de Colombia por departamento y municipio.</li>
+            </ul>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.result">Resultado</h2>
+            <p class="project-page__result" data-i18n="projects.items.onelessonperday.result">Los refugios trabajan desde un solo lugar y los adoptantes encuentran animales cerca de ellos.</p>
+        </section>
+
+        <nav class="project-page__footer" data-reveal>
+            <a href="../business-verification/" class="project-page__next">
+                <span class="eyebrow" data-i18n="projects.labels.next">Siguiente proyecto</span>
+                <span class="project-page__next-title" data-i18n="projects.items.business-verification.title">Plataforma de verificación empresarial</span>
+            </a>
+            <a href="../" class="button button--ghost" data-i18n="projects.labels.back">Volver a proyectos</a>
+        </nav>
+    </main>
+
+    <script type="module" src="../../assets/js/main.ts"></script>
+</body>
+</html>

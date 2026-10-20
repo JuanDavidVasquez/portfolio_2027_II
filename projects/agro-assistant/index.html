@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente agrícola con IA · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="../../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="../" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="project" data-i18n-title="projects.items.agro-assistant.pageTitle" class="project-page">
+        <section class="project-page__intro">
+            <a href="../" class="project-page__back" data-i18n="projects.labels.back">Volver a proyectos</a>
+            <span class="eyebrow" data-i18n="projects.items.agro-assistant.type">IA aplicada · Agro</span>
+            <h1 data-i18n="projects.items.agro-assistant.title">Asistente agrícola con IA</h1>
+            <p class="project-page__lead" data-i18n="projects.items.agro-assistant.tagline">Respuestas basadas en documentación técnica y diagnóstico de plagas y enfermedades a partir de una imagen.</p>
+            <dl class="project-page__meta">
+                <div>
+                    <dt data-i18n="projects.labels.role">Rol</dt>
+                    <dd data-i18n="projects.items.agro-assistant.role">Full Stack Developer</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.company">Contexto</dt>
+                    <dd data-i18n="projects.items.agro-assistant.company">Kubo SAS</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.year">Año</dt>
+                    <dd data-i18n="projects.items.agro-assistant.year">2025</dd>
+                </div>
+            </dl>
+            <ul class="chips" aria-label="Tecnologías" data-i18n-attr="aria-label:projects.labels.stack">
+                <li class="chip">Gemini</li>
+                <li class="chip">RAG</li>
+                <li class="chip">NestJS</li>
+                <li class="chip">Nuxt</li>
+                <li class="chip">TypeScript</li>
+            </ul>
+        </section>
+
+        <div class="project-cover project-cover--alt project-page__cover" aria-hidden="true" data-reveal><span>RAG</span></div>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.context">El reto</h2>
+            <p data-i18n="projects.items.agro-assistant.context">Los productores necesitan respuestas rápidas sobre cultivos, plagas y enfermedades, pero la información confiable suele estar repartida en documentos técnicos difíciles de consultar en campo.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.solution">La solución</h2>
+            <p data-i18n="projects.items.agro-assistant.solution">Construí un asistente con arquitectura RAG sobre Gemini File Search que responde a partir de la documentación cargada, y un módulo que analiza imágenes del cultivo para sugerir un diagnóstico.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.highlights">Lo más destacado</h2>
+            <ul class="project-page__highlights">
+                <li data-i18n="projects.items.agro-assistant.highlights.0">RAG con Gemini File Search sobre documentación técnica agrícola.</li>
+                <li data-i18n="projects.items.agro-assistant.highlights.1">Diagnóstico de plagas y enfermedades a partir de imágenes.</li>
+                <li data-i18n="projects.items.agro-assistant.highlights.2">API con NestJS y frontend con Nuxt.</li>
+            </ul>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.result">Resultado</h2>
+            <p class="project-page__result" data-i18n="projects.items.agro-assistant.result">El productor pregunta en lenguaje natural y recibe respuestas respaldadas por las fuentes, además de un diagnóstico inicial a partir de una foto.</p>
+        </section>
+
+        <nav class="project-page__footer" data-reveal>
+            <a href="../elections/" class="project-page__next">
+                <span class="eyebrow" data-i18n="projects.labels.next">Siguiente proyecto</span>
+                <span class="project-page__next-title" data-i18n="projects.items.elections.title">Sistema electoral en tiempo real</span>
+            </a>
+            <a href="../" class="button button--ghost" data-i18n="projects.labels.back">Volver a proyectos</a>
+        </nav>
+    </main>
+
+    <script type="module" src="../../assets/js/main.ts"></script>
+</body>
+</html>

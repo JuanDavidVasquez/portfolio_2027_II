@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema electoral en tiempo real · Juan Vasquez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../../assets/scss/main.scss">
+</head>
+<body data-barba="wrapper">
+    <header class="site-header">
+        <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+            <a href="../../" data-route="home" data-i18n="nav.home">Inicio</a>
+            <a href="../../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="../" data-route="projects" data-i18n="nav.projects">Proyectos</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+            <button type="button" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="project" data-i18n-title="projects.items.elections.pageTitle" class="project-page">
+        <section class="project-page__intro">
+            <a href="../" class="project-page__back" data-i18n="projects.labels.back">Volver a proyectos</a>
+            <span class="eyebrow" data-i18n="projects.items.elections.type">Tiempo real · Elecciones</span>
+            <h1 data-i18n="projects.items.elections.title">Sistema electoral en tiempo real</h1>
+            <p class="project-page__lead" data-i18n="projects.items.elections.tagline">Resultados en vivo sobre un mapa interactivo por municipio y OCR para generar resoluciones en PDF.</p>
+            <dl class="project-page__meta">
+                <div>
+                    <dt data-i18n="projects.labels.role">Rol</dt>
+                    <dd data-i18n="projects.items.elections.role">Full Stack Developer</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.company">Contexto</dt>
+                    <dd data-i18n="projects.items.elections.company">Kubo SAS</dd>
+                </div>
+                <div>
+                    <dt data-i18n="projects.labels.year">Año</dt>
+                    <dd data-i18n="projects.items.elections.year">2025</dd>
+                </div>
+            </dl>
+            <ul class="chips" aria-label="Tecnologías" data-i18n-attr="aria-label:projects.labels.stack">
+                <li class="chip">AWS Textract</li>
+                <li class="chip">SVG</li>
+                <li class="chip">NestJS</li>
+                <li class="chip">Nuxt</li>
+                <li class="chip">TypeScript</li>
+            </ul>
+        </section>
+
+        <div class="project-cover project-cover--alt project-page__cover" aria-hidden="true" data-reveal><span>SVG</span></div>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.context">El reto</h2>
+            <p data-i18n="projects.items.elections.context">En una jornada electoral los resultados llegan de muchos municipios a la vez, y los documentos escaneados deben convertirse en resoluciones oficiales sin errores de transcripción.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.solution">La solución</h2>
+            <p data-i18n="projects.items.elections.solution">Desarrollé un sistema que muestra los resultados en tiempo real sobre un mapa SVG interactivo por municipio, y un flujo de OCR con AWS Textract que extrae los datos de los documentos y genera las resoluciones en PDF.</p>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.highlights">Lo más destacado</h2>
+            <ul class="project-page__highlights">
+                <li data-i18n="projects.items.elections.highlights.0">Mapa SVG interactivo con resultados por municipio.</li>
+                <li data-i18n="projects.items.elections.highlights.1">Actualización de resultados en tiempo real.</li>
+                <li data-i18n="projects.items.elections.highlights.2">Extracción de datos de documentos con AWS Textract.</li>
+                <li data-i18n="projects.items.elections.highlights.3">Generación automática de resoluciones en PDF.</li>
+            </ul>
+        </section>
+
+        <section class="project-page__section" data-reveal>
+            <h2 data-i18n="projects.labels.result">Resultado</h2>
+            <p class="project-page__result" data-i18n="projects.items.elections.result">La jornada se sigue desde un solo mapa y las resoluciones se generan con mucha menos transcripción manual.</p>
+        </section>
+
+        <nav class="project-page__footer" data-reveal>
+            <a href="../onelessonperday/" class="project-page__next">
+                <span class="eyebrow" data-i18n="projects.labels.next">Siguiente proyecto</span>
+                <span class="project-page__next-title" data-i18n="projects.items.onelessonperday.title">OneLessonPerDay</span>
+            </a>
+            <a href="../" class="button button--ghost" data-i18n="projects.labels.back">Volver a proyectos</a>
+        </nav>
+    </main>
+
+    <script type="module" src="../../assets/js/main.ts"></script>
+</body>
+</html>
