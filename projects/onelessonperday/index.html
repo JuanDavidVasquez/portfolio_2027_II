@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap">
     <link rel="stylesheet" href="../../assets/scss/main.scss">
 </head>
-<body data-barba="wrapper">
+<body>
     <header class="site-header">
         <nav class="site-header__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
             <a href="../../" data-route="home" data-i18n="nav.home">Inicio</a>
             <a href="../../about/" data-route="about" data-i18n="nav.about">Sobre mí</a>
+            <a href="../../skills/" data-route="skills" data-i18n="nav.skills">Habilidades</a>
             <a href="../" data-route="projects" data-i18n="nav.projects">Proyectos</a>
         </nav>
         <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
@@ -22,6 +23,7 @@
         </div>
     </header>
 
+    <div data-barba="wrapper">
     <main data-barba="container" data-barba-namespace="project" data-i18n-title="projects.items.onelessonperday.pageTitle" class="project-page">
         <section class="project-page__intro">
             <a href="../" class="project-page__back" data-i18n="projects.labels.back">Volver a proyectos</a>
@@ -83,6 +85,17 @@
             <a href="../" class="button button--ghost" data-i18n="projects.labels.back">Volver a proyectos</a>
         </nav>
     </main>
+    </div>
+
+    <footer class="site-footer">
+        <nav class="site-footer__links" aria-label="Contacto" data-i18n-attr="aria-label:footer.label">
+            <a href="mailto:Ingjuandavid@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/juan-david-vasquez-73778126/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/JuanDavidVasquez" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <a href="../../docs/juan-david-vasquez-cv.pdf" data-asset="docs/juan-david-vasquez-cv.pdf" download="CV Juan David Vásquez.pdf" class="button button--ghost" data-i18n="footer.cv">Descargar CV</a>
+        <p class="site-footer__copy">© 2026 Juan David Vásquez · Bogotá, Colombia</p>
+    </footer>
 
     <script type="module" src="../../assets/js/main.ts"></script>
 </body>

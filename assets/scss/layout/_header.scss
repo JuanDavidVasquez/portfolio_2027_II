@@ -50,12 +50,19 @@
     }
   }
 
+  // Four links plus the language switch don't fit on one row on narrow phones, so the switch wraps below.
   @media (orientation: portrait) {
-    gap: $space-md;
+    flex-wrap: wrap;
+    gap: $space-sm $space-md;
     padding: $space-md;
+    font-size: $fs-xs;
 
     &__nav {
       gap: $space-md;
+
+      a {
+        white-space: nowrap;
+      }
     }
   }
 }

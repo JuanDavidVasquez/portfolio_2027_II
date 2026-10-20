@@ -17,7 +17,8 @@ import {
   type SimpleIcon,
 } from 'simple-icons';
 
-export type Tech = { label: string; icon?: SimpleIcon };
+// Techs without an icon are rendered as their short text instead.
+export type Tech = { label: string; icon?: SimpleIcon; short?: string };
 
 // simple-icons no longer ships the AWS logo, so it is rendered as text.
 export const stack: Tech[] = [
@@ -26,7 +27,7 @@ export const stack: Tech[] = [
   { label: 'NestJS', icon: siNestjs },
   { label: 'PostgreSQL', icon: siPostgresql },
   { label: 'Docker', icon: siDocker },
-  { label: 'AWS' },
+  { label: 'AWS', short: 'aws' },
   { label: 'React', icon: siReact },
   { label: 'Next.js', icon: siNextdotjs },
   { label: 'Vue', icon: siVuedotjs },
@@ -39,8 +40,8 @@ export const stack: Tech[] = [
   { label: 'MCP', icon: siModelcontextprotocol },
 ];
 
-export function techGraphic({ icon }: Tech, textClass: string) {
+export function techGraphic({ icon, short, label }: Tech, textClass: string) {
   return icon
     ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${icon.path}"/></svg>`
-    : `<span class="${textClass}" aria-hidden="true">aws</span>`;
+    : `<span class="${textClass}" aria-hidden="true">${short ?? label}</span>`;
 }

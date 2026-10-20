@@ -3,8 +3,13 @@
     "label": "Main navigation",
     "home": "Home",
     "about": "About me",
+    "skills": "Skills",
     "projects": "Projects",
     "lang": "Language"
+  },
+  "footer": {
+    "label": "Contact",
+    "cv": "Download CV (Spanish)"
   },
   "home": {
     "meta": {
@@ -62,7 +67,8 @@
           "title": "Computer vision and OCR",
           "text": "OpenCV and AWS Textract to analyze images and extract data from documents."
         }
-      ]
+      ],
+      "cta": "See all skills"
     },
     "experience": {
       "title": "Experience",
@@ -226,5 +232,44 @@
         "result": "Shelters work from a single place and adopters find animals near them."
       }
     }
+  },
+  "skills": {
+    "meta": {
+      "title": "Skills · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "Skills",
+      "title": "My tech stack",
+      "text": "The technologies I use to design, build and ship products, and the projects where I've used them in production."
+    },
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "cloud": "Cloud and DevOps",
+      "ai": "AI and automation",
+      "tools": "Tools"
+    },
+    "items": {
+      "rest": "REST APIs",
+      "vision": "Computer vision"
+    },
+    "usedIn": "Projects where I used it",
+    "projects": {
+      "business-verification": "Business verification",
+      "agro-assistant": "Agricultural assistant",
+      "elections": "Election system",
+      "onelessonperday": "OneLessonPerDay"
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found · Juan Vasquez"
+    },
+    "title": "This page doesn't exist",
+    "text": "The link may be broken or the page may have moved.",
+    "home": "Back to home",
+    "projects": "View projects"
   }
 }

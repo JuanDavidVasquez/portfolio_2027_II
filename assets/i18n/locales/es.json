@@ -3,8 +3,13 @@
     "label": "Navegación principal",
     "home": "Inicio",
     "about": "Sobre mí",
+    "skills": "Habilidades",
     "projects": "Proyectos",
     "lang": "Idioma"
+  },
+  "footer": {
+    "label": "Contacto",
+    "cv": "Descargar CV"
   },
   "home": {
     "meta": {
@@ -62,7 +67,8 @@
           "title": "Visión por computadora y OCR",
           "text": "OpenCV y AWS Textract para analizar imágenes y extraer datos de documentos."
         }
-      ]
+      ],
+      "cta": "Ver todas las habilidades"
     },
     "experience": {
       "title": "Experiencia",
@@ -226,5 +232,44 @@
         "result": "Los refugios trabajan desde un solo lugar y los adoptantes encuentran animales cerca de ellos."
       }
     }
+  },
+  "skills": {
+    "meta": {
+      "title": "Habilidades · Juan Vasquez"
+    },
+    "intro": {
+      "eyebrow": "Habilidades",
+      "title": "Mi stack técnico",
+      "text": "Las tecnologías con las que diseño, construyo y despliego productos, y los proyectos donde las he usado en producción."
+    },
+    "categories": {
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de datos",
+      "cloud": "Cloud y DevOps",
+      "ai": "IA y automatización",
+      "tools": "Herramientas"
+    },
+    "items": {
+      "rest": "APIs REST",
+      "vision": "Visión por computadora"
+    },
+    "usedIn": "Proyectos donde la usé",
+    "projects": {
+      "business-verification": "Verificación empresarial",
+      "agro-assistant": "Asistente agrícola",
+      "elections": "Sistema electoral",
+      "onelessonperday": "OneLessonPerDay"
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Página no encontrada · Juan Vasquez"
+    },
+    "title": "Esta ruta no existe",
+    "text": "Puede que el enlace esté roto o que la página se haya movido.",
+    "home": "Volver al inicio",
+    "projects": "Ver proyectos"
   }
 }
